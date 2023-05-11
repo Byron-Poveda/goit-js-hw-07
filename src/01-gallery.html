@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+    <style>
+      .link-gallery__img {
+        width: 1066px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media screen and (max-width: 1070px) {
+        .link-gallery__img {
+          width: 80vw;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+    <ul class="gallery"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script src="js/01-gallery.js" type="module"></script>
+  </body>
+</html>

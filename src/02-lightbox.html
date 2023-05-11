@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SimpleLightbox library</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.0/simple-lightbox.min.css">
+    <style>
+      .link-gallery__img {
+        width: 1066px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media screen and (max-width: 1070px) {
+        .link-gallery__img {
+          width: 80vw;
+          height: auto;
+        }
+      }
+      .btn-prev {
+        left: 10px;
+      }
+      .btn-next {
+        right: 10px;
+      }
+      .btn {
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+        height: 44px;
+        width: 22px;
+        text-align: center;
+        z-index: 3;
+        color: #000;
+        border: 0 none;
+        background: rgba(0, 0, 0, 0);
+        font-size: 32px;
+        padding: 0;
+        cursor: pointer;
+      }
+      .container-navegation{
+        position: relative;
+        opacity: 1; 
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+    <ul class="gallery"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.0/simple-lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script src="js/02-lightbox.js" type="module"></script>
+  </body>
+</html>
